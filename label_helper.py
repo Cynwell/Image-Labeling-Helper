@@ -6,7 +6,7 @@ prevBtn = sg.Button("Previous")
 
 
 def selectFilesLayout():
-    layout =[
+    layout = [
                 [sg.Input(key=("_FILES_")), sg.FilesBrowse()],
                 [nextBtn]
     ]
