@@ -59,7 +59,7 @@ while True:
     if index >= len(fileList):
         break
     inputWindow.FindElement("imageContainer").Update(fileAbsDir + '/' + fileList[index] + ".png")
-    inputWindow.TKroot.title("[{}/{}] Please input - {}".format(index, len(fileList), fileList[index]))
+    inputWindow.TKroot.title("[{}/{}] Please input - {}".format(index + 1, len(fileList), fileList[index]))
 
 inputWindow.Close()
 
