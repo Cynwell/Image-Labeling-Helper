@@ -3,7 +3,7 @@ Makes image or CAPTCHA labeling work faster.
 
 Requirements:
 - Python (https://www.python.org/downloads/)
-- PySimpleGUI (After installing Python, open "Command Prompt", type "pip install PySimpleGUI")
+- PySimpleGUI v4.0.0 (After installing Python, open "Command Prompt", type "pip install PySimpleGUI==4.0.0") (Not the latest version)
 
 How to run:
 Execute the Python script.
