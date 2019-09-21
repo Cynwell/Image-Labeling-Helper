@@ -1,14 +1,19 @@
 import PySimpleGUI as sg
 import os
 
-nextBtn = sg.Button("Next")
-prevBtn = sg.Button("Previous")
+
+def nextBtn():
+    return sg.Button("Next")
+
+
+def prevBtn():
+    return sg.Button("Previous")
 
 
 def selectFilesLayout():
     layout = [
                 [sg.Input(key=("_FILES_")), sg.FilesBrowse()],
-                [nextBtn]
+                [nextBtn()]
     ]
     return layout
 
@@ -17,7 +22,7 @@ def inputFilenameLayout(displayImage):
     layout = [
                 [displayImage],
                 [sg.InputText(key="Answer", do_not_clear=False)],
-                [prevBtn, nextBtn]
+                [prevBtn(), nextBtn()]
     ]
     return layout
 
